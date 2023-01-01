@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul,li,ol{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        .section-menu ul li a {
+            font-size: 20px;
+            display: inline-block;
+            width: 250px;
+            height: 50px;
+            background-color: #789;
+            text-align: center;
+            line-height: 50px;
+            color: #FFF;
+            font-weight: 700;
+            border-bottom: 2px solid #000;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        .section-menu ul li a:hover{
+            transform: scale(1.1);
+            transition: 300ms all;
+            background-color: #7be;
+        }
+
+
+        .section-menu{display:none;}
+        .section-menu.active{display:block;}
+
+        .navbar-button{
+            background: #789;
+            border: none;
+            width: 70px;
+            height: 70px;
+            color: #FFF;
+            font-size: 30px;
+            font-weight: 800;
+        }
+        .navbar-button:hover{
+            background-color: #7be;
+            transition: 300ms all;
+        }
+    
+
+
+    </style>
+
+</head>
+<body>
+    <button class="navbar-button">
+        >
+    </button>
+
+    <div class="section-menu">
+            
+        <ul>
+ 
+            <li><a href="./home.html" target="contents">Home</a></li>
+            <li><a href="./organization-committee.html" target="contents">Organization Committee</a></li>
+            <li><a href="./program-committee.html" target="contents">Program Committee</a></li>
+            <li><a href="./workshop.html" target="contents">Workshops</a></li>
+            <li><a href="./keynote-speech.html" target="contents" >Keynote Speech</a></li>
+            <li><a href="./documents/BIBM22AcceptedPapers.pdf" target="contents">Accepted Papers</a></li>
+            <li><a href="./paper-submission.html" target="contents">Paper Submission</a></li>
+            <li><a href="./conference-venues.html" target="contents">Conference Venues</a></li>
+            <li><a href="./program-schedule.html" target="contents">Program Schedule</a></li>
+            <li><a href="https://web.cvent.com/event/cc0e2184-2d99-455d-80bb-41c43208970e/summary" target="_blank">Registration</a></li>
+            <li><a href="./funding-panel.html" target="contents">Funding Panel Presentation</a></li>
+        </ul>
+    </div>
+    
+    <script>
+        const btn = document.querySelector(".navbar-button");
+        const getElement = document.querySelector('.section-menu');
+        
+        btn.addEventListener("click",(e) => {
+           getElement.classList.toggle("active")
+        });
+            </script>
+</body>
+</html>
