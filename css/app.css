@@ -119,15 +119,11 @@ iframe {
         width: 200px;
         border-radius: 15px;
     }
-    iframe{
-        margin-left: 230px;
-    }
+
 }
 
 @media (max-width:1000px) {
-    iframe{
-        margin-left: 130px;
-    }
+
     .navbar-button {
         width: 100px;
         font-size: 20px;
@@ -148,12 +144,14 @@ iframe {
     .section-menu {
         display: none;
         position: absolute;
-
-        
     }
 
     .section-menu.active {
         display: block;
     }    
+    iframe{
+        margin-left: 230px;
+        width: 75%;
+    }
 }
 
